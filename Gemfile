@@ -6,6 +6,7 @@ ruby '2.6.5'
 
 # Developer Zone
 gem 'devise', '>= 4.6'
+gem 'recaptcha'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
