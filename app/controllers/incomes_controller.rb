@@ -14,7 +14,8 @@ class IncomesController < ApplicationController
 
   # GET /incomes/new
   def new
-    @income = Income.new
+    #@income = Income.new
+    @income = current_user.incomes.build
   end
 
   # GET /incomes/1/edit
@@ -24,8 +25,8 @@ class IncomesController < ApplicationController
   # POST /incomes
   # POST /incomes.json
   def create
-    @income = Income.new(income_params)
-
+    #@income = Income.new(income_params)
+    @income = current_user.incomes.build
     respond_to do |format|
       if @income.save
         format.html { redirect_to @income, notice: 'Income was successfully created.' }
