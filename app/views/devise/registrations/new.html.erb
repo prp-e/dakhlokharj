@@ -21,7 +21,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
   <%= flash[:recaptcha_error] %>
-  <%= recaptcha_tags %>
+  <%= recaptcha_tags(ajax: true) %>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
