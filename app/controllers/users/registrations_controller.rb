@@ -1,17 +1,12 @@
 # frozen_string_literal: true
 
+
+require 'recaptcha'
+
 class Users::RegistrationsController < Devise::RegistrationsController
   prepend_before_action :check_captcha, only: [:create] # Change this to be any actions you want to protect.
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  def verify_recaptcha
-    @user = User.new(params[:user].permit(:name))
-    if verify_recaptcha(model: @user) && @user.save
-     redirect_to @user
-    else
-     render 'new'
-    end
-  end 
   private
    def check_captcha
     unless  verify_recaptcha
