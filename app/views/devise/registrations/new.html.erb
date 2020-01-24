@@ -20,12 +20,15 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+
+  <%= flash[:recaptcha_error] %>
+  <%= recaptcha_tags(ajax: true) %>
+  
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-<%= flash[:recaptcha_error] %>
-  <%= recaptcha_tags(ajax: true) %>
+
 
 
 <%= render "devise/shared/links" %>
