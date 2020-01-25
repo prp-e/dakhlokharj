@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Incomes</h1>
+<h1>درآمدها</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Amount</th>
-      <th>Description</th>
+      <th>عنوان</th>
+      <th>مبلغ</th>
+      <th>توضیحات</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +18,9 @@
         <td><%= income.title %></td>
         <td><%= income.amount %></td>
         <td><%= income.description %></td>
-        <td><%= link_to 'Show', income %></td>
-        <td><%= link_to 'Edit', edit_income_path(income) %></td>
-        <td><%= link_to 'Destroy', income, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'نمایش', income %></td>
+        <td><%= link_to 'ویرایش', edit_income_path(income) %></td>
+        <td><%= link_to 'حذف', income, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,15 +28,15 @@
 
 <br>
 
-<%= link_to 'New Income', new_income_path %>
+<%= link_to 'درآمد جدید', new_income_path %>
 <% if user_signed_in? %>
     <ul>
-     <li><%= link_to 'Account', edit_user_registration_path %></li>
-     <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+     <li><%= link_to 'حساب کاربری', edit_user_registration_path %></li>
+     <li><%= link_to 'خروج', destroy_user_session_path, :method => :delete %></li>
     </ul>
    <% else %>
     <ul>
-     <li><%= link_to 'Sign up', new_user_registration_path%></li>
-     <li><%= link_to 'Sign in', new_user_session_path %></li>
+     <li><%= link_to 'ایجاد حساب کاربری', new_user_registration_path%></li>
+     <li><%= link_to 'ورود', new_user_session_path %></li>
     </ul>
    <% end %>
