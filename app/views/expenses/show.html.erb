@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>عنوان: </strong>
   <%= @expense.title %>
 </p>
 
 <p>
-  <strong>Amount:</strong>
+  <strong>مبلغ: </strong>
   <%= @expense.amount %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>توضیحات: </strong>
   <%= @expense.description %>
 </p>
 
-<%= link_to 'Edit', edit_expense_path(@expense) %> |
-<%= link_to 'Back', expenses_path %>
+<%= link_to 'ویرایش', edit_expense_path(@expense) %> |
+<%= link_to 'بازگشت', expenses_path %>
