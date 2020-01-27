@@ -7,7 +7,8 @@ ruby '2.6.5'
 # Developer Zone
 gem 'devise', '>= 4.6'
 gem 'recaptcha'
-gem 'dotenv'
+gem 'dotenv' 
+gem 'jalalidate' #For the future uses, I added this gem. 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
