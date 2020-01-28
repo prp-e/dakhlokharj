@@ -22,4 +22,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  database: myincomes_db 
+  user: root 
+  password: toor 
+  host: localhost 
+  encoding: utf8
