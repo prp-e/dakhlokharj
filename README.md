@@ -22,6 +22,7 @@ Then, run these commands :
 
 ```
 bundle install 
+rake assets:precompile 
 rake db:create db:migrate RAILS_ENV=production 
 ``` 
 
@@ -42,3 +43,9 @@ and for running production server, you need to do this :
 ```
 rails s -p 3001 -e production 
 ``` 
+
+### Environment variables 
+
+* ```RAILS_ENV``` : Can be `test`, `development` or `production`
+* ```RECAPTCHA_SITE_KEY``` : Should be taken from Google. 
+* ```RECAPTCHA_SECRET_KEY``` : Should be taken from Google. 
