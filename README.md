@@ -4,3 +4,7 @@ This repository belongs to [My Incomes](https://myincomes.ir) project. This proj
 
 ## TODO 
 Take a look at [TODO](TODO.md)
+
+## How to contribute 
+
+TODO
