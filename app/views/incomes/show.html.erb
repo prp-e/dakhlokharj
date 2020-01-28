@@ -14,6 +14,10 @@
   <strong>توضیحات: </strong>
   <%= @income.description %>
 </p>
+<p>
+  <strong> تاریخ: </strong>
+  <%= JalaliDate.new(Date.parse(@income.created_at.to_s)) %>
+</p>
 
 <%= link_to 'ویرایش', edit_income_path(@income) %> |
 <%= link_to 'بازگشت', incomes_path %>
