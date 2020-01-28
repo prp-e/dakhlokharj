@@ -8,6 +8,7 @@
       <th>عنوان</th>
       <th>مبلغ</th>
       <th>توضیحات</th>
+      <th>تاریخ </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= expense.title %></td>
         <td><%= expense.amount %></td>
         <td><%= expense.description %></td>
+        <td><%= JalaliDate.new(Date.parse(expense.created_at.to_s))%></td>
         <td><%= link_to 'نمایش', expense %></td>
         <td><%= link_to 'ویرایش', edit_expense_path(expense) %></td>
         <td><%= link_to 'حذف', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -15,5 +15,10 @@
   <%= @expense.description %>
 </p>
 
+<p>
+  <strong> تاریخ: </strong>
+  <%= JalaliDate.new(Date.parse(@expense.created_at.to_s)) %>
+</p>
+
 <%= link_to 'ویرایش', edit_expense_path(@expense) %> |
 <%= link_to 'بازگشت', expenses_path %>
