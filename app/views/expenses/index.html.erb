@@ -33,6 +33,7 @@
 <%= link_to 'خرج جدید', new_expense_path %>
 <% if user_signed_in? %>
     <ul>
+     <li><%= link_to 'بازگشت', root_path =%>
      <li><%= link_to 'حساب کاربری', edit_user_registration_path %></li>
      <li><%= link_to 'خروج', destroy_user_session_path, :method => :delete %></li>
     </ul>
