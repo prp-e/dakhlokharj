@@ -1,0 +1,58 @@
+<h1> سامانه مدیریت دخل و خرج </h1>
+
+<% if !user_signed_in? %>
+<p class="error-message">
+    کاربر گرامی، به سامانه مدیریت دخل و خرج خوش آمدید. لطفا جهت استفاده از امکانات ما وارد شوید یا یک حساب کاربری جدید ایجاد کنید.
+</p>
+<ul>
+     <li><%= link_to 'ایجاد حساب کاربری', new_user_registration_path%></li>
+     <li><%= link_to 'ورود', new_user_session_path %></li>
+</ul>
+<% else %> 
+<h1 class="welcome-message"> خوش آمدید! </h1>
+<div class="user-property">
+ <div class="user-block">
+  <h2> درآمدها </h2>
+  <table>
+   <thead>
+   <tr>
+    <th><strong> عنوان </strong></th>
+    <th><strong> مبلغ </strong></th>
+    <th><strong>  تاریخ </strong></th>
+    <th colspan="3"></th>
+   </tr>
+   </thead>
+   <tbody>
+    <% current_user.incomes.each do |income| %>
+    <tr>
+     <td><%= income.title %></td>
+     <td><%= income.amount %></td> 
+     <td><%= JalaliDate.new(Date.parse(income.created_at.to_s)) %>
+    </tr> 
+    <% end %>
+   </tbody>
+  </table>
+ </div>
+ <div class="user-block">
+   <h2> مخارج </h2>
+   <table>
+   <thead>
+   <tr>
+    <th><strong> عنوان </strong></th>
+    <th><strong> مبلغ </strong></th>
+    <th><strong>  تاریخ </strong></th>
+    <th colspan="3"></th>
+   </tr>
+   </thead>
+   <tbody>
+    <% current_user.expenses.each do |expense| %>
+    <tr>
+     <td><%= expense.title %></td>
+     <td><%= expense.amount %></td> 
+     <td><%= JalaliDate.new(Date.parse(expense.created_at.to_s)) %>
+    </tr> 
+    <% end %>
+  </table>
+ </div>
+</div>
+<% end %>

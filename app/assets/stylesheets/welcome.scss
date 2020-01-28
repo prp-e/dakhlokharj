@@ -1,0 +1,30 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.error-message {
+    padding-top: 12pt; 
+    line-height: 1.25em; 
+    font-size: 16pt; 
+    color: red;
+}
+
+.welcome-message {
+    margin-top:25px; 
+    color: green; 
+}
+
+.user-property {
+    display: flex;
+    //border-radius: 25px; 
+    //background-color: #33ccff
+}
+
+.user-block {
+   // display:flex;
+    //flex-direction: row;
+    width:25%;
+    margin : 12px, 12px, 12px, 12px; 
+    //border-radius: 25px; 
+    //background-color: #ffff00; 
+}
