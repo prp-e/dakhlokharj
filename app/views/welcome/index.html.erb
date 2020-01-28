@@ -32,6 +32,7 @@
     <% end %>
    </tbody>
   </table>
+    <a class="link-to" href="/incomes"> صفحه مدیریت درآمدها </a>
  </div>
  <div class="user-block">
    <h2> مخارج </h2>
@@ -53,6 +54,10 @@
     </tr> 
     <% end %>
   </table>
+  <a class="link-to" href="/expenses"> صفحه مدیریت مخارج </a>
  </div>
+</div>
+<div class="end-of-page">
+<%= link_to 'خروج', destroy_user_session_path, :method => :delete %></li>
 </div>
 <% end %>
