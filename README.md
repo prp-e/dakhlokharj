@@ -22,6 +22,7 @@ Then, run these commands :
 
 ```
 bundle install 
+rake webpack:install 
 rake assets:precompile 
 rake db:create db:migrate RAILS_ENV=production 
 ``` 
