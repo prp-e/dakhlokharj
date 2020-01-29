@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/index'
+  get 'devise/registrations/after_signup'
   devise_for :users , controllers: {registrations: "users/registrations", confirmations: "users/confirmations"}
   resources :expenses
   resources :incomes

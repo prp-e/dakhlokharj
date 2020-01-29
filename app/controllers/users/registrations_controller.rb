@@ -17,6 +17,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
       
     end
    end
+  
+  protected
+  def after_inactive_sign_up_path_for(resource)
+    'devise_registrations_after_signup'
+  end
   # GET /resource/sign_up
   # def new
   #   super
