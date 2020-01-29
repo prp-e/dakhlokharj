@@ -7,7 +7,7 @@
 
 ## For final product 
 
-* RESTful API 
+* RESTful API (Currently in progress)
 * API Token 
 * Confirmation E-Mail 
 * Android App 
