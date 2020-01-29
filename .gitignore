@@ -13,6 +13,8 @@
 /db/*.sqlite3-*
 /config/database.yml 
 
+# Main production file 
+/config/environments/production.rb 
 
 # Ignore all logfiles and tempfiles.
 /log/*
