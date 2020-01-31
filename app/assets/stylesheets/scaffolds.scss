@@ -6,7 +6,7 @@ body {
   margin: 33px; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family:"Tanha", verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
@@ -67,9 +67,15 @@ label {
   display: block; }
 
 p {
+  
+  margin-top: 12px; 
+  font-size: 14pt; 
+  font-family: "Tanha";
   text-align: right; 
 }
 
 h1, h2, h3 {
+  font-family: "Tanha"; 
+  font-weight: bold; 
   text-align: right; 
 }
