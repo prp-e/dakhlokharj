@@ -12,7 +12,7 @@ gem 'jalalidate' #For the future uses, I added this gem.
 
 #Production Zone 
 
-gem 'mysql2'
+#gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
