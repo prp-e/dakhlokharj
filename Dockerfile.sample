@@ -8,6 +8,10 @@ CMD echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/so
 CMD apt update 
 CMD apt install yarn
 
+ENV RAILS_ENV=production
+ENV RECAPTCHA_SITE_KEY=YOUR_SITE_KEY
+ENV RECPATCHA_SECRET_KEY=YOUR_SECRET_KEY
+
 RUN mkdir /app
 ADD . /app 
 WORKDIR /app
