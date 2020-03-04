@@ -49,6 +49,7 @@ rails s -p 3001 -e production
 
 * ```config/environments/production.rb.sample``` : Just modify this for your mailing options and remove `.sample` from the file name. 
 * ```config/database.yml.sample``` : Modify this file for your own database management system or your MySQL settings. 
+* ```Dockerfile.sample``` : In case you want to deploy the project using docker, it would be useful. Just edit it the way you want and you have everything you need :)
 
 ### Environment variables 
 
