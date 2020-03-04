@@ -17,3 +17,8 @@ ADD . /app
 WORKDIR /app
 
 RUN bundle 
+RUN rake db:create 
+RUN rake db:migrate 
+ENV SECRET_KEY_BASE='$(rake secret)'
+
+CMD rails s -b 0.0.0.0 
