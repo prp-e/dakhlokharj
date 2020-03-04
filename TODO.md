@@ -2,13 +2,13 @@
 
 ## For MVP 
 
-* ReCaptcha for sign up (check)
-* ReCaptcha for sign in 
+- [x] ReCaptcha for sign up 
+- [ ] ReCaptcha for sign in 
 
 ## For final product 
 
-* RESTful API (Currently in progress)
-* API Token 
-* Confirmation E-Mail 
-* Android App 
-* Desktop App (Windows/Linux/Mac)
+- [ ] RESTful API (Currently in progress)
+- [ ] API Token 
+- [x] Confirmation E-Mail 
+- [ ] Android App 
+- [ ] Desktop App (Windows/Linux/Mac)
