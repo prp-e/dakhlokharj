@@ -1,0 +1,15 @@
+FROM ruby:2.6.5
+
+CMD apt update 
+CMD gem install bundle -v '1.17.5'
+
+CMD curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+CMD echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+CMD apt update 
+CMD apt install yarn
+
+RUN mkdir /app
+ADD . /app 
+WORKDIR /app
+
+RUN bundle 
