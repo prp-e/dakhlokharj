@@ -12,3 +12,5 @@
 - [x] Confirmation E-Mail 
 - [ ] Android App 
 - [ ] Desktop App (Windows/Linux/Mac)
+
+## Deployment stuff
