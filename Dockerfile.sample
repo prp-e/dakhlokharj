@@ -16,6 +16,8 @@ RUN mkdir /app
 ADD . /app 
 WORKDIR /app
 
+RUN rm -vf ./myincomes.db # Remove this after your first deploy 
+
 RUN bundle 
 RUN rake db:create 
 RUN rake db:migrate 
